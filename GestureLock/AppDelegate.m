@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "MainViewController.h"
+#import "LockViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds] ];
+    if (![[NSUserDefaults standardUserDefaults] valueForKey:@"hannah"]) {
+        UIStoryboard *storeboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        self.window.rootViewController = [storeboard instantiateInitialViewController];
+        self.window.backgroundColor = [UIColor whiteColor];
+    }else
+    {
+        LockViewController *lock = [[LockViewController alloc] init];
+        self.window.rootViewController = lock;
+    }
+   
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
