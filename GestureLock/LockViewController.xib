@@ -20,17 +20,21 @@
                     <rect key="frame" x="-8" y="-8" width="328" height="576"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </imageView>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dld-bv-Sht" customClass="GestureLockView">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dld-bv-Sht" customClass="GestureLockView">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="QQA-x0-d67" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-8" id="CgU-Te-TKd"/>
                 <constraint firstItem="QQA-x0-d67" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-8" id="Yfs-KK-aXk"/>
+                <constraint firstAttribute="bottom" secondItem="Dld-bv-Sht" secondAttribute="bottom" id="a9i-kP-glI"/>
+                <constraint firstItem="Dld-bv-Sht" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aBs-A5-gXH"/>
                 <constraint firstAttribute="trailing" secondItem="QQA-x0-d67" secondAttribute="trailing" id="m97-fV-Vlq"/>
+                <constraint firstAttribute="trailing" secondItem="Dld-bv-Sht" secondAttribute="trailing" id="nEd-KQ-fnc"/>
                 <constraint firstAttribute="bottom" secondItem="QQA-x0-d67" secondAttribute="bottom" id="zAz-8d-B0s"/>
+                <constraint firstItem="Dld-bv-Sht" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zJ7-GO-dA9"/>
             </constraints>
             <point key="canvasLocation" x="280" y="239"/>
         </view>
